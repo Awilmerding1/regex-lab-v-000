@@ -13,6 +13,7 @@ array = text.scan(/(\Aun)+\w+(ing\z)/)
 if array.empty?
   return array
 end
+end
 
 def words_five_letters_long(text)
 
