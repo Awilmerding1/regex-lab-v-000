@@ -12,8 +12,8 @@ end
 def words_starting_with_un_and_ending_with_ing(text)
   array = []
 text.scan(/(\Aun)+\w+(ing\z)/)
-array = text.scan(/(\Aun)+\w+(ing\z)/)
-array
+array << text.scan(/(\Aun)+\w+(ing\z)/)
+return array
 end
 
 def words_five_letters_long(text)
