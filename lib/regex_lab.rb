@@ -11,8 +11,8 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   array = []
-return text.scan(/(\Aun)+\w+(ing\z)/)
-array << text.scan(/(\Aun)+\w+(ing\z)/)
+return text.scan(/\Aun+\w+ing\z/)
+array << text.scan(/\Aun+\w+ing\z/)
  array
  return array
 end
