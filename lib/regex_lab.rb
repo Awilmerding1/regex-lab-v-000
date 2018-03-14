@@ -16,7 +16,7 @@ end
 def words_five_letters_long(text)
 array = []
 text.scan(/\w{5}/)
-array << text.scan(/\w{5}/)
+array = text.scan(/\w{5}/)
  array
 end
 
