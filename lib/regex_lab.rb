@@ -12,6 +12,11 @@ end
 def words_starting_with_un_and_ending_with_ing(text)
 array = []
 text.scan(/(\A+un)+(\z+ing)/)
+array = text.scan(/(\A+un)+(\z+ing)/)
+if array.empty?
+  false 
+else true
+end
 
 end
 
