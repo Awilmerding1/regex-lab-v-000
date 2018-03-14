@@ -2,7 +2,10 @@ def starts_with_a_vowel?(word)
   value = []
   word.scan(/\A[aeiouAEIOU]/)
   value = word.scan(/\A[aeiouAEIOU]/)
-  value
+  if value.empty?
+   false 
+ else true 
+ end
 end
 
 
@@ -12,7 +15,6 @@ text.scan(/(\Aun)+\w+(ing\z)/)
 array = text.scan(/(\Aun)+\w+(ing\z)/)
 if array.empty?
   return array
-end
 end
 
 def words_five_letters_long(text)
