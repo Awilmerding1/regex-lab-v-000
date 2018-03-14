@@ -23,8 +23,6 @@ end
 
 
 def valid_phone_number?(phone)
-  if phone.scan(/[\d{10}(){0,2}-]/).empty?
-    false
-  else true
-end
+  phone.scan(/[\d{10}(){0,2}-]/)
+  
 end
