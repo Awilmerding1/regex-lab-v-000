@@ -23,6 +23,5 @@ end
 
 
 def valid_phone_number?(phone)
-  phone.scan(/(\d{10}[(){0,2}-])/)
-  
+  phone.scan(/\(*(\d{3})\)*\s*+\d{3}\-*\s*+\d{4}/)
 end
